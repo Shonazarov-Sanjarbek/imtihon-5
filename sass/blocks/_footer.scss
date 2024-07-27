@@ -80,7 +80,6 @@
         @include dfc(start, start);
         gap: 16px;
         p {
-            font-family: Poppins;
             font-size: 20px;
             font-weight: 500;
             line-height: 28px;
@@ -88,7 +87,6 @@
             margin-bottom: 8px;
         }
         span {
-            font-family: Poppins;
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
@@ -111,7 +109,6 @@
     }
     &__qr__code {
         @include dfc(start, start);
-
         gap: 8px;
         p {
             font-size: 12px;
@@ -139,6 +136,44 @@
         p{
             color: $bg-inp-text;
         }
+    }
+}
+
+@media (max-width: 1000px){
+    .footer__collection{
+        gap: 72px;
+    }
+    .footer__accaunts{
+        p{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        span{
+            line-height: 18px;
+        }
+    }
+    .footer__exclusive{
+        button{
+            padding: 10px 12px;
+            gap: 28px;
+        }
+    }
+}
+@media (max-width: 850px){
+    .footer__collection{
+        gap: 60px;
+    }
+    .footer__exclusive{
+        button{
+            padding: 8px 10px;
+            gap: 24px;
+        }
+    }
+}
+@media (max-width: 780px){
+    .footer__collection{
+        gap: 48px;
+        flex-wrap: wrap;
     }
 }
 

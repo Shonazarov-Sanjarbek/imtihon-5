@@ -51,6 +51,7 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
+        padding: 0 10px;
         span{
             color: $bg-dark;
             display: -webkit-box;
@@ -74,6 +75,28 @@
            font-weight: 500;
            line-height: 24px;
         }
+    }
+}
+
+@media (max-width: 850px){
+    .products__card{
+        width: calc(33.33% - 20px);
+    }
+}
+@media (max-width: 700px){
+    .products__wrapper{
+        gap: 20px;
+    }
+    .products__card{
+        width: calc(50% - 10px);
+    }
+}
+@media (max-width: 500px){
+    .products__wrapper{
+        gap: 30px;
+    }
+    .products__card{
+        width: 100%;
     }
 }
 
