@@ -53,6 +53,10 @@
         line-height: 24px;
         span{
             color: $bg-dark;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
         }
         p{
             color: $bg-py;

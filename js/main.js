@@ -51,7 +51,7 @@ function createCard(data) {
                 <img class="card-img" src="${product.image}" alt="">
             </div>
             <div class="products__card__content">
-                <span>${product.title}</span>
+                <span title="${product.title}">${product.title}</span>
                 <p>$${product.price}</p>
             </div>
         `
@@ -60,6 +60,11 @@ function createCard(data) {
     }
 );
 }
+
+btn.addEventListener("click", ()=> {
+    offset++
+    fetchProduct(API__PRODUCTS, perPageCount * offset, categoryValue)
+})
 
 
 
