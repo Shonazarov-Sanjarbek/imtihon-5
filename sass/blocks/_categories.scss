@@ -1,0 +1,98 @@
+.categories{
+    width: 100%;
+    @include dfc(start, center);
+    margin-top: 24px;
+    padding: 70px 0;
+    gap: 60px;  
+    border-bottom: 1px solid $bg-border;
+    &__block{
+        width: 100%;
+        @include dfc(start, center);
+        gap: 20px;
+    }
+    &__subtitle{
+        width: 100%;
+        @include df(start, center);
+        gap: 10px;
+        p{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            color: $bg-py;
+        }
+    }
+    &__subtitle::before{
+        content: "";
+        width: 20px;
+        height: 40px;
+        background: $bg-py;
+    }
+    &__title{
+        width: 100%;
+        span{
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 48px;
+            color: $bg-dark;
+        }
+    }
+    &__wrapper{
+        width: 100%;
+        @include df();
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    &__card{
+        width: calc(16.66% - 25px);
+        height: 145px;
+        @include dfc();
+        gap: 16px;
+        color: $bg-dark;
+        border: 1px solid $bg-border;
+        img{
+            width: 56px;
+            height: 56px;
+        }
+        span{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    &__card:hover{
+        background: $bg-py;
+        color: $bg-light;
+    }
+}
+@media (max-width: 800px){
+    .categories__wrapper{
+        gap: 30px;
+    }
+    .categories__card{
+        width: calc(25% - 22.5px);
+    }
+}
+@media (max-width: 700px){
+    .categories__wrapper{
+        gap: 30px;
+    }
+    .categories__card{
+        width: calc(33.33% - 20px);
+    }
+}
+@media (max-width: 450px){
+    .categories__wrapper{
+        gap: 30px;
+    }
+    .categories__card{
+        width: calc(50% - 15px);
+    }
+}
+@media (max-width: 350px){
+    .categories__wrapper{
+        gap: 30px;
+    }
+    .categories__card{
+        width: 100%;
+    }
+}

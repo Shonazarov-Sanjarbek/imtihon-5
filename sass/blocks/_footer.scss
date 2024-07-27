@@ -1,0 +1,146 @@
+.footer {
+    width: 100%;
+    margin-top: 140px;
+    background: $bg-dark;
+    min-height: 440px;
+    &__body {
+        @include dfc(start, start);
+        padding-top: 80px;
+        gap: 70px;
+    }
+    &__title {
+        @include df(start, start);
+    }
+    &__collection {
+        @include df(start, start);
+        gap: 87px;
+    }
+    &__exclusive {
+        @include dfc(start, start);
+        gap: 24px;
+        p {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: $bg-light;
+
+        }
+        a {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            color: $bg-light;
+        }
+        span {           
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $bg-light;
+        }
+        button {
+            @include df(start, center);
+            gap: 32px;
+            padding: 12px 16px;
+            border-radius: 4px;
+            border: 1.5px solid $bg-light;
+            color: $bg-inp-text;
+            background: transparent;
+            transition: .7s;
+            .fa-right-long {
+                color: $bg-light;
+            }
+            &:hover {
+                cursor: pointer;
+                background: $bg-py;
+                color: $bg-light;
+            }
+        }
+    }
+    &__support {
+        @include dfc(start, start);
+        width: 175px;
+        gap: 16px;
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            color: $bg-light;
+            margin-bottom: 8px;
+        }
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $bg-light;
+        }
+    }
+    &__accaunts {
+        @include dfc(start, start);
+        gap: 16px;
+        p {
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            color: $bg-light;
+            margin-bottom: 8px;
+        }
+        span {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $bg-light;
+
+        }
+    }
+    &__download {
+        @include dfc(start, start);
+        gap: 24px;
+    }
+    &__download__title {
+        @include df(start, start);
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            color: $bg-light;
+        }
+    }
+    &__qr__code {
+        @include dfc(start, start);
+
+        gap: 8px;
+        p {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            opacity: 70%;
+            color: $bg-light;
+        }
+    }
+    &__google{
+        @include df(start, center);
+        gap: 8px;
+        .google__app{
+            @include dfc(start, start);
+            gap: 8px;
+        }
+    }
+    &__icons{
+        @include df(start, start);
+        gap: 24px;
+        color: $bg-light
+    }
+    &__end{
+        @include dfc(center, center);
+        p{
+            color: $bg-inp-text;
+        }
+    }
+}
+
+
+        
