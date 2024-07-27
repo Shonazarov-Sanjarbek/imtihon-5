@@ -41,24 +41,24 @@ function createCard(data) {
         wrapper.firstChild.remove();
       }
       console.log(data);
-//     data.forEach((product) => {
-//         console.log(product);
-//         // let card = document.createElement("div")
-//         // card.classList.add("products__card")
-//         // console.log(card);
-//         // card.innerHTML = `
-//         //     <div class="products__img">
-//         //         <img class="card-img" src="${product.image}" alt="">
-//         //     </div>
-//         //     <div class="products__card__content">
-//         //         <span>${product.title}</span>
-//         //         <p>$${product.price}</p>
-//         //     </div>
-//         // `
-//         // wrapper.appendChild(card)
-//         console.log(card);
-//     }
-// );
+    data.forEach((product) => {
+        console.log(product);
+        let card = document.createElement("div")
+        card.classList.add("products__card")
+        console.log(card);
+        card.innerHTML = `
+            <div class="products__img">
+                <img class="card-img" src="${product.image}" alt="">
+            </div>
+            <div class="products__card__content">
+                <span>${product.title}</span>
+                <p>$${product.price}</p>
+            </div>
+        `
+        wrapper.appendChild(card)
+        console.log(card);
+    }
+);
 }
 
 
